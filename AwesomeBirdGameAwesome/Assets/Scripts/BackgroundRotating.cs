@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class BackgroundRotating : MonoBehaviour
 {
+    public float speed = 0.0005f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, -1, 0);
+        transform.Rotate(0, -speed, 0);
     }
 }
