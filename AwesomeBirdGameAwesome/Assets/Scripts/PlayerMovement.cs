@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float verticalInput;
     public float speed = 10.0f;
-    public float yRange = 20;
+    public float yRangeGoingUp = 13;
+    public float yRangeGoingDown = 5;
 
     public GameObject projectilePrefab;
 
@@ -20,15 +21,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //keeping the player in bounds
-        if (transform.position.y < -yRange)
+        if (transform.position.y < yRangeGoingDown)
         {
-            transform.position = new Vector3(yRange, transform.position.x, transform.position.z);
+            transform.position = new Vector3(transform.position.x, yRangeGoingUp, transform.position.z);
         }
-        if (transform.position.y > yRange)
+        if (transform.position.y > yRangeGoingUp)
         {
-            transform.position = new Vector3(-yRange, transform.position.x, transform.position.z);
+            transform.position = new Vector3(transform.position.x, yRangeGoingDown, transform.position.z);
         }
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
     }
 }
+    

@@ -17,6 +17,10 @@ public class TestMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y < -10)
+        {
+            transform.position = new Vector3(0, -10, 0)
+        }
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
     }
