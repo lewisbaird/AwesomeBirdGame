@@ -6,7 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
     private float RockXPosition = -35;
-    private float RockZPosition = 11;
+    private float RockZPosition = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             Instantiate(ObstaclePrefabs[0], new Vector3(RockXPosition, Random.Range(13, 5), RockZPosition), ObstaclePrefabs[0].transform.rotation);
         }

@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10.0f;
     public float yRangeGoingUp = 13;
     public float yRangeGoingDown = 5;
-
     public GameObject projectilePrefab;
 
     // Start is called before the first frame update
@@ -31,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
         }
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
     
