@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -211,7 +211,7 @@ MonoBehaviour:
   speed: 10
   yRangeGoingUp: 14
   yRangeGoingDown: 4
-  projectilePrefab: {fileID: 2448962650664653658, guid: 6e16346b42e960d409fc5471bf901b12, type: 3}
+  projectilePrefab: {fileID: 7873978909715365060, guid: f233614ebd2f7be4585754ba7eb83460, type: 3}
 --- !u!65 &480630110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -468,7 +468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 458, y: -211}
+  m_AnchoredPosition: {x: 614, y: -269}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948699361
@@ -493,7 +493,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Up = I
 
-    Down = K'
+    Down = K
+
+    Shoot = P'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -688,7 +690,7 @@ MonoBehaviour:
   speed: 10
   yRangeGoingUp: 13
   yRangeGoingDown: 5
-  projectilePrefab: {fileID: 2448962650664653658, guid: 4aff9c27620b7594bb00da39d347ec87, type: 3}
+  projectilePrefab: {fileID: 8893256250668590861, guid: 5668d6fdeda4e894bb46ee26dd5dc8c1, type: 3}
 --- !u!1001 &1172975804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -824,7 +826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -424, y: -211}
+  m_AnchoredPosition: {x: -583, y: -270}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402573536
@@ -849,7 +851,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Up = W
 
-    Down = S'
+    Down = S
+
+    Shoot = Spacebar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

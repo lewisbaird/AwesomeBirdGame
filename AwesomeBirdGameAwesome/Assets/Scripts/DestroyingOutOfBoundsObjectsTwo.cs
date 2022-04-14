@@ -14,7 +14,7 @@ public class DestroyingOutOfBoundsObjectsTwo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z >s LeftBoundry)
+        if(transform.position.z > LeftBoundry)
         {
             Destroy(gameObject);
         }

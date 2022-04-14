@@ -1,0 +1,99 @@
+newmtl head
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_default_color.jpg
+map_Ks husa_default_rough.jpg
+map_bump husa_default_nmap.jpg
+newmtl body
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_body_color.jpg
+map_Ks husa_body_rough.jpg
+map_bump husa_body_nmap.jpg
+newmtl tail
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_tail_color.jpg
+map_Ks husa_tail_rough.jpg
+map_bump husa_tail_nmap.jpg
+newmtl ear
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_ear_color.jpg
+map_Ks husa_ear_rough.jpg
+map_bump husa_ear_nmap.jpg
+newmtl eye
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_eye_color.jpg
+map_Ks husa_eye_rough.jpg
+map_bump husa_eye_nmap.jpg
+newmtl frontleg
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_frontleg_color.jpg
+map_Ks husa_frontleg_rough.jpg
+map_bump husa_frontleg_nmap.jpg
+newmtl backleg
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_backleg_color.jpg
+map_Ks husa_backleg_rough.jpg
+map_bump husa_backleg_nmap.jpg
+newmtl nose
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_nose_color.jpg
+map_Ks husa_nose_rough.jpg
+map_bump husa_nose_nmap.jpg
+newmtl beard
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd husa_beard_color.jpg
+map_Ks husa_beard_rough.jpg
+map_bump husa_beard_nmap.jpg
