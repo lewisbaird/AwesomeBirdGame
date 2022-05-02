@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RockTwoMovement : MonoBehaviour
+public class CatMovement : MonoBehaviour
 {
     public float speed = 4.0f;
 
@@ -16,5 +16,10 @@ public class RockTwoMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+        //void OnTriggerEnter(Collider other)
+        //{
+        //    Debug.Log
+        //}
     }
 }
