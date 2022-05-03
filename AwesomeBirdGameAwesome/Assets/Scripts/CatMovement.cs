@@ -5,11 +5,12 @@ using UnityEngine;
 public class CatMovement : MonoBehaviour
 {
     public float speed = 4.0f;
+    //public TextMeshProUGUI PlayerOneWinsText;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        //PlayerOneWinsText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -17,9 +18,9 @@ public class CatMovement : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
-        //void OnTriggerEnter(Collider other)
-        //{
-        //    Debug.Log
-        //}
+        void OnTriggerEnter(Collider other)
+        {
+            
+        }
     }
 }
