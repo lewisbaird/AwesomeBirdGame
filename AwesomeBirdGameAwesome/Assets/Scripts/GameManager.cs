@@ -1,22 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class CatMovement : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public float speed = 4.0f;
+    public TextMeshProUGUI PlayerOneWinsText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerOneWinsText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //moves cat fowards
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
+        
     }
 }
