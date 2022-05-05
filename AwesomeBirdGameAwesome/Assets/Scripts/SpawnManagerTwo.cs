@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManagerTwo : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
-    private float RockXPosition = -35;
+    private float RockXPosition = 50;
     private float RockZPosition = -4;
 
     // Start is called before the first frame update
