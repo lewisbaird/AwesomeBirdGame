@@ -14,7 +14,8 @@ public class DestroyingOutOfBoundsObjectsTwo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.z > LeftBoundry)
+        //destroys cats that leave the scene
+        if (transform.position.z > LeftBoundry)
         {
             Destroy(gameObject);
         }

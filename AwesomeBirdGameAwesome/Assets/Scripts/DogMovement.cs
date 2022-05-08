@@ -15,6 +15,7 @@ public class DogMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //moves dog fowards
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }

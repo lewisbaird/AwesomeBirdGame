@@ -19,8 +19,13 @@ public class PlayerOneCollision : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    //when dog hits player one display "Player Two Wins" and destroys player one
+    void OnTriggerEnter(Collider other)
     {
-        PlayerTwoWinsText.gameObject.SetActive(true);
+        if (other.CompareTag("dog"))
+        {
+            PlayerTwoWinsText.gameObject.SetActive(true);
+            Destroy(gameObject);
+        }
     }
 }

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerTwoMovement : MonoBehaviour
+public class ShootingScriptPlayer2 : MonoBehaviour
 {
     public float horizontalInput;
     public float speed = 10.0f;
     public float yRangeGoingUp = 14;
     public float yRangeGoingDown = 4;
+    public GameObject projectilePrefab;
+    //public GameObject playerTwoShootingPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -31,5 +33,18 @@ public class PlayerTwoMovement : MonoBehaviour
         //movement controls
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.up * horizontalInput * Time.deltaTime * speed);
+
+        //shoots cats
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
     }
+
+    //public void PlayerTwoDisable()
+    //{ 
+    //    enabled = false;
+    //    player2TwoShootingPosition.gameObject.SetActive(false);
+    //}
 }

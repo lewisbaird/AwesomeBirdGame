@@ -5,22 +5,31 @@ using TMPro;
 
 public class PlayerTwoCollision : MonoBehaviour
 {
-    public TextMeshProUGUI PlayerOneWinsText;
+    public TextMeshProUGUI playerOneWinsText;
+    //private ShootingScriptPlayer2 playerTwoShootingScript;
+    //public bool gameOver;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        //playerTwoShootingScript = GameObject.Find("Player 2 Shooting position").GetComponent<ShootingScriptPlayer2>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        //if (gameOver == true)
+        //{
+        //    ShootingScriptPlayer2.PlayerTwoDisable();
+        //}
     }
 
-    void OnCollisionEnter(Collision collision)
+    //when cat hits player one display "Player One Wins" and destroys player two
+    void OnTriggerEnter(Collider other)
     {
-        PlayerOneWinsText.gameObject.SetActive(true);
+        if (other.CompareTag("cat"))
+        {
+            playerOneWinsText.gameObject.SetActive(true);
+            Destroy(gameObject);
+            //gameOver = true;
+        }
     }
 }

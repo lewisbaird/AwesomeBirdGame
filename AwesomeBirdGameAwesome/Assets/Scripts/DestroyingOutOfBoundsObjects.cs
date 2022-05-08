@@ -14,6 +14,7 @@ public class DestroyingOutOfBoundsObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //destroys dogs that leave the scene
         if(transform.position.z < LeftBoundry)
         {
             Destroy(gameObject); 

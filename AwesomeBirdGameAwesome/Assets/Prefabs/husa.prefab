@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: -3968394742166004501}
   m_Layer: 0
   m_Name: husa
-  m_TagString: Untagged
+  m_TagString: cat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +147,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7873978909715365060}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.846025, y: 9.655952, z: 14.10042}
@@ -179,5 +179,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 2
