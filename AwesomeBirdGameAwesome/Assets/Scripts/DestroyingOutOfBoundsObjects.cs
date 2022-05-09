@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class DestroyingOutOfBoundsObjects : MonoBehaviour
 {
-    private float LeftBoundry = -10;
-    // Start is called before the first frame update
+    private float leftBoundry = -10; //distance dog has to travel to to get deleted
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         //destroys dogs that leave the scene
-        if(transform.position.z < LeftBoundry)
+        if(transform.position.z < leftBoundry)
         {
             Destroy(gameObject); 
         }

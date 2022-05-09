@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class CatMovement : MonoBehaviour
 {
-    public float speed = 4.0f;
+    public float speed = 4.0f; //the speed the cat travels at
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         //moves cat fowards

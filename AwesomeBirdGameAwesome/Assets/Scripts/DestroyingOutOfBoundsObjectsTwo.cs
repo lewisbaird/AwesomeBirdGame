@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class DestroyingOutOfBoundsObjectsTwo : MonoBehaviour
 {
-    private float LeftBoundry = 11;
-    // Start is called before the first frame update
+    private float rightBoundry = 11; //distance cat has to travel to to get deleted
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //destroys cats that leave the scene
-        if (transform.position.z > LeftBoundry)
+        if (transform.position.z > rightBoundry)
         {
             Destroy(gameObject);
         }

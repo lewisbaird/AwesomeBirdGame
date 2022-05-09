@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerTwoMovement : MonoBehaviour
 {
-    public float horizontalInput;
-    public float speed = 10.0f;
-    public float yRangeGoingUp = 14;
-    public float yRangeGoingDown = 4;
+    public float horizontalInput; //controls for moving player two (I and K)
+    public float speed = 10.0f; //speed that player two moves up and down at
+    public float yRangeGoingUp = 14; //The height at which player two is teleported back down
+    public float yRangeGoingDown = 4; //The height at which player two is teleported back up
 
     // Start is called before the first frame update
     void Start()

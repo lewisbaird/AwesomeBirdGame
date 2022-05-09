@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float verticalInput;
-    public float speed = 10.0f;
-    public float yRangeGoingUp = 13;
-    public float yRangeGoingDown = 5;
+    public float verticalInput; //controls for moving player one (W and S)
+    public float speed = 10.0f; //speed that player one moves up and down at
+    public float yRangeGoingUp = 13; //The height at which player one is teleported back down
+    public float yRangeGoingDown = 5; //The height at which player one is teleported back up
 
     // Start is called before the first frame update
     void Start()

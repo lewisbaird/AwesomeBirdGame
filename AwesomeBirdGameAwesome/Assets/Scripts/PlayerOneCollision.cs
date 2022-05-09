@@ -5,26 +5,26 @@ using TMPro;
 
 public class PlayerOneCollision : MonoBehaviour
 {
-    public TextMeshProUGUI PlayerTwoWinsText;
+    public TextMeshProUGUI playerTwoWinsText; //The text that says player two wins
+    public GameObject playAgainButton; //button to restart the game
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
     }
 
-    //when dog hits player one display "Player Two Wins" and destroys player one
+    //when dog hits player one display "Player Two Wins" and destroys player one and displays restart button
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("dog"))
         {
-            PlayerTwoWinsText.gameObject.SetActive(true);
+            playerTwoWinsText.gameObject.SetActive(true);
+            playAgainButton.gameObject.SetActive(true);
             Destroy(gameObject);
         }
     }

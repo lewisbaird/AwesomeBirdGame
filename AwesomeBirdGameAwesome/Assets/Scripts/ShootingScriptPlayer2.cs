@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ShootingScriptPlayer2 : MonoBehaviour
 {
-    public float horizontalInput;
-    public float speed = 10.0f;
-    public float yRangeGoingUp = 14;
-    public float yRangeGoingDown = 4;
-    public GameObject projectilePrefab;
+    public float horizontalInput; //controls for moving player twos shooting position (I and K)
+    public float speed = 10.0f; //speed that player twos shooting position shooting position moves up and down at
+    public float yRangeGoingUp = 14; //point that player twos shooting position gets teleported down at
+    public float yRangeGoingDown = 4; //point that player twos shooting position gets teleported up at
+    public GameObject projectilePrefab; //where the cat is prefab attatched to
     //public GameObject playerTwoShootingPosition;
 
     // Start is called before the first frame update
