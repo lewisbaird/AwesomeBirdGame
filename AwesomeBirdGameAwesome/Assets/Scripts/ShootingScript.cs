@@ -10,13 +10,11 @@ public class ShootingScript : MonoBehaviour
     public float yRangeGoingDown = 5; //point that player ones shooting position gets teleported up at
     public GameObject projectilePrefab; //where the cat is prefab attatched to
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //keeping the player in bounds

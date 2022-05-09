@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerOneCollision : MonoBehaviour
 {
@@ -27,5 +28,10 @@ public class PlayerOneCollision : MonoBehaviour
             playAgainButton.gameObject.SetActive(true);
             Destroy(gameObject);
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

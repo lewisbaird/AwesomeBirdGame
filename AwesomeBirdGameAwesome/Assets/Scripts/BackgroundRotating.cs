@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundRotating : MonoBehaviour
 {
-    public float speed = 0.0005f;
+    public float speed = 0.0005f; //speed that background is rotating at
 
     void Start()
     {
