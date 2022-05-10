@@ -37,4 +37,9 @@ public class ShootingScript : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
+
+    public void DisableScript()
+    {
+        enabled = false;
+    }
 }

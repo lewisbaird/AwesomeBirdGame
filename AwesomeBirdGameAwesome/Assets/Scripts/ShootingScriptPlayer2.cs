@@ -39,4 +39,8 @@ public class ShootingScriptPlayer2 : MonoBehaviour
 
     }
 
+    public void DisableScript()
+    {
+        enabled = false;
+    }
 }

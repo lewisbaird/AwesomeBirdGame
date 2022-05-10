@@ -9,9 +9,13 @@ public class PlayerOneCollision : MonoBehaviour
     public TextMeshProUGUI playerTwoWinsText; //The text that says player two wins
     public GameObject playAgainButton; //button to restart the game
 
+    private ShootingScript shootingScriptPlayer1;
+
+    public GameObject player1;
+
     void Start()
     {
-
+        shootingScriptPlayer1 = player1.GetComponent<ShootingScript>();
     }
 
     void Update()
