@@ -31,6 +31,7 @@ public class PlayerOneCollision : MonoBehaviour
             playerTwoWinsText.gameObject.SetActive(true);
             playAgainButton.gameObject.SetActive(true);
             Destroy(gameObject);
+            shootingScriptPlayer1.DisableScript();
         }
     }
 
